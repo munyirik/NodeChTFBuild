@@ -13,7 +13,7 @@
 		<Copy SourceFiles="\\scratch2\scratch\IoTDevX\BuildHelpers\TFBuild_Serialport.ps1" DestinationFolder="."/>
 		<PropertyGroup>
 			<ScriptLocation>. .\TFBuild_Serialport.ps1</ScriptLocation>
-      <Options></Options>
+			<Options></Options>
 		</PropertyGroup>
 		<Exec Command="PowerShell -command &quot;&amp; { $(ScriptLocation) $(Options) } &quot;" />
 	</Target>
