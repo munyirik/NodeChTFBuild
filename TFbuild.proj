@@ -10,7 +10,7 @@
 	</ItemGroup>
   
 	<Target Name="BuildDeviceFiles" BeforeTargets="AfterBuild">
-		<Copy SourceFiles="\\scratch2\scratch\IoTDevX\BuildHelpers\TFBuild_Serialport.ps1" DestinationFolder="."/>
+		<Copy SourceFiles="\\scratch2\scratch\IoTDevX\BuildHelpers\TFBuild_SerialportChakraCore.ps1" DestinationFolder="."/>
 		<PropertyGroup>
 			<ScriptLocation>. .\TFBuild_SerialportChakraCore.ps1</ScriptLocation>
 			<Options></Options>
