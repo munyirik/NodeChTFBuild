@@ -10,10 +10,10 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <FilesToSign Include="$(OutDir)release\node-chakra-x86.msi">
+    <FilesToSign Include="$(OutDir)release\node-chakracore-x86.msi">
       <Authenticode>MicrosoftSHA1</Authenticode>
     </FilesToSign>
-    <FilesToSign Include="$(OutDir)release\node-chakra-x64.msi">
+    <FilesToSign Include="$(OutDir)release\node-chakracore-x64.msi">
       <Authenticode>MicrosoftSHA1</Authenticode>
     </FilesToSign>
   </ItemGroup>
