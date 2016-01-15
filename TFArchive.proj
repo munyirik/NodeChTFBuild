@@ -14,7 +14,7 @@
 	    <ZipFiles Include="$(OutDir)release\arm\node.exe" />
 	    <ZipFiles Include="$(OutDir)release\arm\chakracore.dll" />
 	  </ItemGroup>
-	  <Exec Command="PowerShell -command Compress-Archive $(ZipFiles) $(OutDir)release\arm\node-chakracore-arm.zip" />
+	  <Exec Command="PowerShell -command Compress-Archive @(ZipFiles, ',') $(OutDir)release\arm\node-chakracore-arm.zip" />
 	</Target>
 
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
