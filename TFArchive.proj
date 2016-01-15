@@ -9,7 +9,7 @@
 	  <Compile Include="TFbuildstub.cs" />
 	</ItemGroup>
 
-	<Target Name="ZipArmFiles">
+	<Target Name="ZipArmFiles" BeforeTargets="AfterBuild">
 	  <ItemGroup>
 	    <ZipFiles Include="$(OutDir)release\arm\node.exe" />
 	    <ZipFiles Include="$(OutDir)release\arm\chakracore.dll" />
