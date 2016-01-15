@@ -1,0 +1,21 @@
+<!-- This project is used by Team Foundation build. It will build the Node.js UWP binaries that are deployed to devices -->
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+	  <OutputPath>bin\</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Include="TFbuildstub.cs" />
+	</ItemGroup>
+
+	<Target Name="ZipArmFiles">
+	  <ItemGroup>
+	    <ZipFiles Include="$(OutDir)release\arm\node.exe" />
+	    <ZipFiles Include="$(OutDir)release\arm\chakracore.dll" />
+	  </ItemGroup>
+	  <Exec Command="PowerShell -command Compress-Archive $(ZipFiles) $(OutDir)release\arm\node-chakracore-arm.zip" />
+	</Target>
+
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>
