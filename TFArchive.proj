@@ -7,13 +7,13 @@
 	  <Compile Include="TFbuildstub.cs" />
 	</ItemGroup>
 
-	<!--<Target Name="ZipArmFiles" BeforeTargets="AfterBuild">
+	<Target Name="ZipArmFiles" BeforeTargets="AfterBuild">
 	  <ItemGroup>
 	    <ZipFiles Include="$(OutDir)release\arm\node.exe" />
 	    <ZipFiles Include="$(OutDir)release\arm\chakracore.dll" />
 	  </ItemGroup>
 	  <Exec Command="PowerShell -command Compress-Archive @(ZipFiles, ',') $(OutDir)release\arm\node-chakracore-arm.zip" />
-	</Target>-->
+	</Target>
 
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
 	<Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -8,18 +8,18 @@
 	</ItemGroup>
   
 	<ItemGroup>
-		<!--<FilesToSign Include="$(OutDir)release\arm\node.exe">
+		<FilesToSign Include="$(OutDir)release\arm\node.exe">
 			<Authenticode>MicrosoftWin8WinBlue</Authenticode>
-		</FilesToSign>-->
+		</FilesToSign>
 		<FilesToSign Include="$(OutDir)release\ia32\node.exe">
 			<Authenticode>Microsoft</Authenticode>
 		</FilesToSign>
 		<FilesToSign Include="$(OutDir)release\x64\node.exe">
 			<Authenticode>Microsoft</Authenticode>
 		</FilesToSign>
-		<!--<FilesToSign Include="$(OutDir)release\arm\chakracore.dll">
+		<FilesToSign Include="$(OutDir)release\arm\chakracore.dll">
 			<Authenticode>MicrosoftWin8WinBlue</Authenticode>
-		</FilesToSign>-->
+		</FilesToSign>
 		<FilesToSign Include="$(OutDir)release\ia32\chakracore.dll">
 			<Authenticode>Microsoft</Authenticode>
 		</FilesToSign>
