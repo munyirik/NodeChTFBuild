@@ -32,7 +32,7 @@
 		<Copy SourceFiles="\\scratch2\scratch\IoTDevX\BuildHelpers\TFBuild_NodeCh.ps1" DestinationFolder="."/>
 		<PropertyGroup>
 			<ScriptLocation>. .\TFBuild_NodeCh.ps1</ScriptLocation>
-			<Options>-build_exe -chakracore</Options>
+			<Options>-build_exe -chakracorexplat</Options>
 		</PropertyGroup>
 		<Exec Command="PowerShell -command &quot;&amp; { $(ScriptLocation) $(Options) } &quot;" />
 	</Target>
